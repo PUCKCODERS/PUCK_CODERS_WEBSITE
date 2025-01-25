@@ -18,7 +18,198 @@ html {
   width: 100%;
   height: 100vh;
   background-color: #fff;
+  overflow: hidden;
 }
+
+/* Navigation */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 12rem;
+  padding: 0 15rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo span {
+  text-shadow: 0 0.7rem rgba(0, 0, 0, 0.3);
+}
+
+.logo span:nth-child(1) {
+  font-family: "Mooli", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.logo span:nth-child(1) span {
+  display: inline-block;
+  font-size: 1.8rem;
+  transform: translateY(-0.8rem);
+}
+.logo span:nth-child(2) {
+  display: inline-block;
+  font-family: "Croissant One", cursive;
+  font-size: 1.5rem;
+  color: #ddd;
+  letter-spacing: 0.1rem;
+  text-align: right;
+  transform: translate(4.2rem, -1rem);
+}
+/* End of Logo */
+
+/* Nav Items */
+.nav-items {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  list-style: none;
+  position: relative;
+}
+
+.nav-link {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0.7rem rgba(0, 0, 0, 0.3);
+}
+
+/* Dropdown 1 */
+.dropdown-1 {
+  position: absolute;
+  top: 4.9rem;
+  left: -24rem;
+  background-color: #fff;
+  width: 96rem;
+  height: 60rem;
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 12px 6px 18px #000;
+  padding: 2rem;
+}
+
+.dropdown-1-left {
+  width: 30%;
+  padding-right: 4rem;
+}
+
+.dropdown-1-right {
+  width: 70%;
+  padding-left: 2rem;
+}
+
+.dropdown-1-left h3,
+.dropdown-1-right h3 {
+  font-family: "Mooli", cursive;
+  font-size: 1.8rem;
+  color: #011af7;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
+}
+
+.features-list-item {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.features-list-item i {
+  font-size: 2.5rem;
+  width: 4rem;
+  color: #0195f7;
+  transition: color 0.3s;
+}
+
+.features-list-item:hover i {
+  transform: scale(1.1);
+}
+
+.features-list-item span {
+  font-size: 1.5rem;
+  color: #8698a7;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.features-list-item:hover i,
+.features-list-item:hover span {
+  color: #011af7;
+}
+
+.dropdown-services {
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.dropdown-service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.5rem;
+  cursor: pointer;
+}
+
+.dropdown-service i {
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid #011af7;
+  background: linear-gradient(to left, #011af7, #0195f7);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin-right: 2rem;
+  align-items: center;
+  font-size: 2.5rem;
+  color: #fff;
+  box-shadow: 12px 6px 18px #000;
+}
+
+.dropdown-service:hover i {
+  transform: scale(1.1);
+}
+
+/* End of Dropdown 1 */
+
+.nav-btn {
+  width: 12.5rem;
+  height: 3.5rem;
+  background: linear-gradient(to left, #011af7, #0195f7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  box-shadow: 12px 6px 18px #000;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-transform: uppercase;
+  transition: transform 0.3s;
+}
+
+.nav-btn:hover {
+  transform: translateY(-0.3rem);
+}
+
+/* End of Nav Items */
+/* End of Navigation */
 
 /* Header */
 header {
@@ -26,6 +217,53 @@ header {
   height: 100vh;
   position: relative;
 }
+
+/* Banner */
+.banner {
+  position: absolute;
+  top: 18%;
+  left: 20%;
+  z-index: 4;
+}
+
+.banner h1 {
+  font-family: "Mooli", cursive;
+  font-size: 13rem;
+  color: #fff;
+  text-shadow: 0.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.banner h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0.7rem rgba(0, 0, 0, 0.3);
+  margin: 0 0 3rem 1rem;
+}
+
+.banner button {
+  width: 15rem;
+  height: 5rem;
+  background: linear-gradient(to left, #01581b, #2b9c4d);
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  box-shadow: 12px 6px 18px #000;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.banner button:hover {
+  transform: translateY(-0.3rem);
+}
+
+/* End of Banner */
 
 /* Backgrounds */
 .backgrounds div {
@@ -47,7 +285,7 @@ header {
 .bg-1 {
   width: 50%;
   height: 100%;
-  background: linear-gradient(transparent 60%, #ff26ac, #f724db);
+  background: linear-gradient(transparent 60%, #2e0101, #914747);
   top: -40%;
   right: -10%;
   transform: rotateZ(-15deg) skewX(30deg);
@@ -57,7 +295,7 @@ header {
 .bg-2 {
   width: 50%;
   height: 100%;
-  background: linear-gradient(transparent 70%, #ca5995, #fe945a);
+  background: linear-gradient(transparent 70%, #0a6602, #6d9b68);
   top: -60%;
   right: -10%;
   transform: rotateZ(-15deg) skewX(30deg);
