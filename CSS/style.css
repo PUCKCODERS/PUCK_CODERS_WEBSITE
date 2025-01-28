@@ -980,7 +980,7 @@ header {
 }
 
 .projects-list {
-  width: 70%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -990,24 +990,50 @@ header {
 .project {
   width: 33rem;
   height: 33rem;
+  position: relative;
+  margin: 5rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project.hide {
+  display: none;
 }
 
 .project img {
+  position: absolute;
   object-fit: cover;
+  top: 50%;
+  border-radius: 1rem;
 }
 
 .project img:nth-child(1) {
   width: 22rem;
   height: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 6px 3px 9px #000;
+  z-index: 2;
 }
 .project img:nth-child(2) {
-  width: 22rem;
+  width: 20rem;
   height: 30rem;
+  left: -5%;
+  transform: translateY(-50%);
+  box-shadow: 0 3rem 8rem rgba(12, 12, 12, 0.9);
+  z-index: 1;
 }
 
 .project img:nth-child(3) {
   width: 100%;
   height: 70%;
+  right: -10%;
+  transform: translateY(-50%);
+  box-shadow: 12px 6px 18px #000;
 }
 
 /* End of Projects */
