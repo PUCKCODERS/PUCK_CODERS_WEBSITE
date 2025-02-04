@@ -216,7 +216,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.2rem;
   text-transform: capitalize;
   color: #fff;
-  text-shadow: 0.7rem 1rem 0.7rem rgba(0, 0, 0, 0.781);
+  text-shadow: 0.1rem 0.5rem 0.1rem rgba(0, 0, 0, 0.781);
 }
 
 .promo-content button {
