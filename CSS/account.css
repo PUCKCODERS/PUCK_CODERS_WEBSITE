@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   bottom: 20%;
   left: 33%;
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .account-header {

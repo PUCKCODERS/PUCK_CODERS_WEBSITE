@@ -11,7 +11,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden; /* Bloquea el desplazamiento horizontal */
-  overflow-y: auto; /* Permite solo el desplazamiento vertical */
+  overflow-y: auto;
 }
 /* End of Default Styles */
 
@@ -33,7 +33,7 @@ body::-webkit-scrollbar-track {
 /* Container */
 .container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: #fff;
 }
 
@@ -44,7 +44,7 @@ body::-webkit-scrollbar-track {
   left: 0;
   z-index: 1000;
   width: 100%;
-  height: 12rem;
+  min-height: 12rem;
   padding: 0 15rem;
   display: flex;
   justify-content: space-between;
@@ -948,7 +948,7 @@ header {
 /* Projects */
 .projects {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   padding: 25rem 0 15rem 0;
   display: flex;
   flex-direction: column;
@@ -961,6 +961,7 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   color: #394353;
+  text-align: center;
   margin-bottom: 4rem;
 }
 
@@ -1448,14 +1449,214 @@ footer {
 
 /* End of Footer */
 /* End of Container */
-/*
-.filter-nav-link:hover {
-  background-color: #dadfe2;
-  transform: translateY(-0.3rem);
+
+/* Responsive */
+@media (max-width: 1600px) {
+  .container {
+    font-size: 60%;
+  }
+  .navbar {
+    padding: 0 10rem;
+  }
+
+  .nav-items {
+    width: 55%;
+  }
+
+  .dropdown {
+    top: 4.5rem;
+  }
+
+  .services-wrapper {
+    width: 60%;
+  }
+
+  .projects-list {
+    width: 90%;
+  }
+
+  .templates-right img:nth-child(1) {
+    top: 45%;
+    width: 35rem;
+  }
+  .templates-right img:nth-child(3) {
+    width: 55rem;
+  }
+
+  .subcribe {
+    margin-top: -1rem;
+  }
 }
 
-.active {
-  background-color: #fab651;
-  color: #fff;
+@media (max-width: 1440px) {
+  .container {
+    font-size: 60%;
+  }
+  .nav-items {
+    width: 60%;
+  }
+  .services-wrapper {
+    width: 75%;
+  }
+  .filter-nav {
+    width: 85%;
+  }
+  .projects-list {
+    width: 85;
+  }
+  .templates-left p {
+    width: 50rem;
+  }
 }
-*/
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 56%;
+  }
+
+  .project {
+    width: 30rem;
+  }
+
+  .project img:nth-child(1) {
+    width: 19rem;
+  }
+
+  .project img:nth-child(2) {
+    width: 17rem;
+    left: 0;
+  }
+
+  .project img:nth-child(1) {
+    width: 19rem;
+    right: 0;
+  }
+
+  .templates-right img:nth-child(1) {
+    width: 30rem;
+    top: 45%;
+  }
+
+  .templates-right img:nth-child(2) {
+    width: 17rem;
+  }
+
+  .templates::before {
+    width: 70rem;
+    height: 70rem;
+    bottom: 0;
+    right: 8%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 5rem;
+  }
+  .nav-items {
+    width: 65%;
+  }
+  .logo span:nth-child(1) {
+    font-size: 2.5rem;
+  }
+  .logo span:nth-child(1) span {
+    font-size: 1.5rem;
+  }
+  .logo span:nth-child(2) {
+    font-size: 1.2rem;
+  }
+  .banner {
+    top: 16%;
+    left: 18%;
+  }
+  .banner h1 {
+    font-size: 9rem;
+  }
+  .banner h3 {
+    font-size: 2rem;
+  }
+  .bg-main {
+    left: -25%;
+  }
+  .bg-1 {
+    right: -5%;
+  }
+  .bg-2 {
+    width: 60%;
+  }
+
+  .services {
+  }
+  .services-bg-1 {
+    top: -17%;
+    right: 1%;
+    width: 60rem;
+    height: 60rem;
+  }
+  .services-bg-2 {
+    bottom: -13%;
+    left: 5%;
+    width: 60rem;
+    height: 60rem;
+  }
+
+  .services-list {
+    justify-content: space-evenly;
+  }
+  .templates-left {
+    padding: 25rem 10rem 0 5rem;
+  }
+  .templates-left h1 {
+    font-size: 5rem;
+  }
+  .templates-left p {
+    width: 45rem;
+    font-size: 1.5rem;
+  }
+  .templates-btn {
+    width: 27rem;
+    height: 5.5rem;
+    font-size: 1.6rem;
+  }
+  .templates-right img:nth-child(1) {
+    top: 45%;
+    width: 25rem;
+  }
+  .templates-right img:nth-child(2) {
+    top: 28%;
+    left: 20%;
+    width: 14rem;
+  }
+  .templates-right img:nth-child(3) {
+    top: 28%;
+    width: 40rem;
+  }
+  .play-btn {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .play-btn::before {
+    width: 23rem;
+    height: 23rem;
+  }
+  .templates::before {
+    width: 60rem;
+    height: 60rem;
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+/* End of Responsive */

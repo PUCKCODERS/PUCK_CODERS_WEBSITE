@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   bottom: 12%;
   left: 10%;
-  opacity: 0.9;
+  opacity: 0.3;
 }
 
 .contact-header {

@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb {
   top: 80%;
   left: 10%;
   transform: rotateZ(45deg);
-  opacity: 0.9;
+  opacity: 0.3;
 }
 
 .pricing-small-circle {
@@ -39,6 +39,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: 70%;
   right: 15%;
+  opacity: 0.3;
 }
 
 .pricing-large-circle {
@@ -47,9 +48,9 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to right, transparent, #7118d6 90%);
   border-radius: 50%;
   position: absolute;
-  bottom: -85%;
+  bottom: -75%;
   right: 11%;
-  opacity: 0.9;
+  opacity: 0.3;
 }
 
 .pricing-header {
@@ -216,3 +217,42 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(to right, #ca6eff, #7118d6 90%);
 }
 /* End of Pricing*/
+
+/* Responsive */
+@media (max-width: 1600px) {
+  .pricing-small-circle {
+    right: 10%;
+  }
+  .pricing-large-circle {
+    right: 5%;
+    bottom: -80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing-card {
+    width: 40rem;
+  }
+  .pricing-rectangle {
+    top: 75%;
+    left: 5%;
+    width: 45rem;
+    height: 45rem;
+  }
+
+  .pricing-large-circle {
+    bottom: -75%;
+    right: 5%;
+    width: 45rem;
+    height: 45rem;
+  }
+
+  .pricing-small-circle {
+    top: 70%;
+    right: 5%;
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+/* End of Responsive */

@@ -5,6 +5,7 @@ body::-webkit-scrollbar-thumb {
 /* End of Custom Scrollbar*/
 
 /* Testimonials */
+
 .testimonials {
   width: 100%;
   min-height: 100%;
@@ -130,3 +131,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* End of Testimonials*/
+
+/* Responsive */
+@media (max-width: 1600px) {
+  .testimonials-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .testimonials-header {
+    width: 110%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .testimonials-wrapper {
+    width: 90%;
+  }
+  .testimonial {
+    width: 30rem;
+  }
+}
+
+/* End of Responsive */
