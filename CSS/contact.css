@@ -215,3 +215,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* End of Contact */
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .contact-circle {
+    width: 100rem;
+    height: 100rem;
+    bottom: 12%;
+    left: 1%;
+  }
+}

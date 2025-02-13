@@ -367,7 +367,7 @@ body::-webkit-scrollbar-thumb {
     width: 24rem;
   }
   .promo-content {
-    width: 70%;
+    width: 80%;
   }
   .promo-content h1 {
     font-size: 2.5rem;
@@ -377,7 +377,7 @@ body::-webkit-scrollbar-thumb {
     height: 50rem;
   }
   .animate .large-circle {
-    right: -2%;
+    right: 7%;
   }
 }
 

@@ -141,13 +141,19 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 1440px) {
   .testimonials-header {
-    width: 110%;
+    width: 95%;
+  }
+  .testimonial {
+    width: 30rem;
   }
 }
 
 @media (max-width: 1024px) {
-  .testimonials-wrapper {
-    width: 90%;
+  .testimonials-header {
+    width: 100%;
+  }
+  .testimonials-header h1 {
+    width: 100%;
   }
   .testimonial {
     width: 30rem;
