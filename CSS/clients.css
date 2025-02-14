@@ -160,4 +160,14 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 820px) {
+  .testimonials-header h1 {
+    width: 80%;
+    font-size: 3.8rem;
+  }
+  .stars {
+    right: 12%;
+  }
+}
+
 /* End of Responsive */

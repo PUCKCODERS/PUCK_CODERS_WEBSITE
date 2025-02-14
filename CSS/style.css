@@ -1837,14 +1837,19 @@ footer {
     transform: rotateZ(-21deg) skewX(30deg);
     border-radius: 0 0 0 5rem;
   }
-  .navbar {
+  .hamburger.navbar {
     background-color: #fff;
   }
-  .navbar .logo span {
+  .hamburger.navbar .logo span {
     color: #4400ab;
     text-shadow: 0 0.7rem rgba(206, 206, 206, 0.3);
   }
+
   .nav-items {
+    display: none;
+  }
+
+  .hamburger .nav-items {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1857,7 +1862,7 @@ footer {
     background-color: #f2f4f5;
   }
 
-  .nav-item:not(:last-child) {
+  .hamburger .nav-item:not(:last-child) {
     width: 100%;
     height: 12rem;
     display: flex;
@@ -1880,6 +1885,10 @@ footer {
     align-items: center;
   }
 
+  .nav-item.show::before {
+    content: "-";
+  }
+
   .nav-item:last-child {
     position: absolute;
     bottom: 0;
@@ -1893,7 +1902,7 @@ footer {
     box-shadow: 0 1rem 10rem rgba(130, 162, 235, 0.2);
   }
 
-  .nav-item a:not(.nav-btn) {
+  .hamburger .nav-item a:not(.nav-btn) {
     color: #4400ab;
     font-size: 3rem;
     font-weight: 400;
@@ -1911,15 +1920,37 @@ footer {
     letter-spacing: 1.5rem;
   }
 
+  .dropdown {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-item:hover .dropdown {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .nav-item.show .dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .dropdown-1 {
+    left: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .dropdown-1,
+  .dropdown-2,
+  .dropdown-3,
+  .dropdown-4,
+  .dropdown-5 {
     width: 100%;
     top: 12rem;
-    left: 0;
     z-index: 100;
     border-radius: 0;
     box-shadow: none;
-    flex-direction: column;
-    padding: 0;
   }
 
   .dropdown-1-left {
@@ -1943,6 +1974,21 @@ footer {
     height: 75%;
     padding: 0 2rem 13rem 2rem;
     background-color: #fff;
+  }
+
+  .dropdown-2 {
+    height: auto;
+    left: 0;
+    flex-direction: column;
+    padding: 2rem 2rem 0 2rem;
+  }
+
+  .dropdown-2 div {
+    margin: 0 0.5rem 2rem 0.5rem;
+  }
+
+  .dropdown-2 div i {
+    font-size: 7rem;
   }
   .dropdown-1-right button {
     width: 40%;
@@ -1974,18 +2020,125 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s;
+  }
+
+  .position.menu-icon {
+    top: 4rem;
+    transform: translateY(-50%);
+  }
+
+  .icon-pages .line {
+    background-color: #092627;
   }
 
   .line {
     width: 100%;
     height: 0.4rem;
     background-color: #000;
+    transition: transform 0.3s ease;
   }
-  .line-1 {
+
+  .navbar.sticky .line {
+    background-color: #092627;
+  }
+
+  .hamburger .line {
+    background-color: #000;
+  }
+  .hamburger .line-1 {
     transform: rotate(45deg) translateY(1.2rem);
   }
-  .line-2 {
+  .hamburger .line-2 {
     transform: rotate(-45deg) translateY(-1.2rem);
+  }
+
+  header {
+    height: 100vh;
+  }
+
+  .services {
+    height: 120vh;
+    margin-bottom: 3rem;
+  }
+  .service {
+    margin-bottom: 3rem;
+  }
+  .service h3 {
+    font-size: 1.5rem;
+  }
+
+  .services-bg-1 {
+    top: -20%;
+    right: 0;
+  }
+  .services-bg-2 {
+    left: 1;
+  }
+
+  .filter-nav {
+    width: 90%;
+  }
+  .filter-nav-link {
+    width: 12rem;
+    height: 4.5rem;
+  }
+
+  .projects-list {
+    width: 90%;
+  }
+
+  .templates-left {
+    left: 5%;
+    padding: 12rem 10rem 0 10rem;
+  }
+
+  .templates-left h1 {
+    font-size: 7rem;
+  }
+  .templates-left p {
+    font-size: 2rem;
+  }
+
+  .templates-btn {
+    width: 40rem;
+    height: 6rem;
+    font-size: 2.5rem;
+  }
+
+  .templates-right img:nth-child(1) {
+    width: 30rem;
+    top: 70%;
+  }
+  .templates-right img:nth-child(2) {
+    width: 20rem;
+    height: 30rem;
+    top: 57%;
+    left: -15%;
+  }
+  .templates-right img:nth-child(3) {
+    width: 50rem;
+    top: 60%;
+  }
+
+  .templates::before {
+    width: 60rem;
+    height: 60rem;
+    bottom: -5%;
+    right: 5%;
+    background: linear-gradient(to bottom, transparent, #2f324d, #2f324d);
+  }
+
+  .play-button {
+    top: 60%;
+    left: -8%;
+  }
+
+  .subcribe-wrapper {
+    width: 90%;
+  }
+  .footer-social-media {
+    width: 35%;
   }
 }
 
