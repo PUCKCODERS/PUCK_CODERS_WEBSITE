@@ -2203,4 +2203,94 @@ footer {
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 430px) {
+  html {
+    font-size: 40%;
+  }
+
+  .bg-main {
+    top: -110%;
+    left: -187%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      #4400ab,
+      #4400ab,
+      #4400ab
+    );
+    transform: rotateZ(-19deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .bg-1 {
+    top: -60%;
+    right: 96%;
+    background: linear-gradient(to right, #2e0101, #914747, #2e0101);
+    transform: rotateZ(-21deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .bg-2 {
+    top: -65%;
+    right: 96%;
+    background: linear-gradient(to right, #0a6602, #6d9b68, #0a6602);
+    transform: rotateZ(-21deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .banner {
+    top: 10%;
+    left: 10%;
+    z-index: 4;
+  }
+  .banner h1 {
+    font-size: 5rem;
+    text-shadow: 0.1rem 1.3rem rgba(0, 0, 0, 0.3);
+  }
+  .banner h3 {
+    font-size: 2.5rem;
+  }
+  .banner button {
+    width: 13rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .services-bg-1 {
+    top: -20%;
+    right: 0;
+  }
+
+  .services-bg-2 {
+    bottom: -13%;
+    left: 1;
+  }
+
+  .services {
+    margin-bottom: 5rem;
+  }
+
+  .service h3 {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+  .service p {
+    font-size: 1rem;
+  }
+
+  .projects h1 {
+    font-size: 4rem;
+  }
+  .projects p {
+    width: 60rem;
+  }
+  .filter-nav {
+    height: 15rem;
+    flex-wrap: wrap;
+  }
+  .filter-nav-link {
+    margin: 1.6rem;
+  }
+}
 /* End of Responsive */
