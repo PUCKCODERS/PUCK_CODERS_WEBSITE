@@ -177,4 +177,18 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 430px) {
+  .testimonials-header h1 {
+    font-size: 4rem;
+  }
+
+  .stars {
+    display: none;
+  }
+
+  .testimonials-header h1 {
+    margin-left: 5rem;
+  }
+}
+
 /* End of Responsive */

@@ -196,4 +196,64 @@ body::-webkit-scrollbar-thumb {
     bottom: 25%;
   }
 }
+
+@media (max-width: 430px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .account-header h1 {
+    font-size: 4rem;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+  }
+
+  .account-header h3 {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 2rem auto 25rem auto;
+  }
+
+  .account-circle {
+    width: 60rem;
+    height: 60rem;
+    bottom: 25%;
+    left: 10%;
+  }
+  .account-form-wrapper > span {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .account-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+  .account-inputs input {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .account-form-wrapper button {
+    margin-bottom: 3rem;
+  }
+  .account-form-wrapper {
+    width: 50rem;
+    height: 70rem;
+    margin-bottom: 3rem;
+  }
+  .btn-out {
+    width: 45rem;
+    height: 6rem;
+    margin-bottom: 5rem;
+  }
+
+  .footer-top {
+    margin-bottom: 10rem;
+  }
+}
 /* End of Responsive */

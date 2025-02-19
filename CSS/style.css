@@ -2210,8 +2210,8 @@ footer {
   }
 
   .bg-main {
-    top: -110%;
-    left: -187%;
+    top: -109%;
+    left: -188%;
     background: linear-gradient(
       to right,
       transparent,
@@ -2224,7 +2224,7 @@ footer {
   }
 
   .bg-1 {
-    top: -60%;
+    top: -51%;
     right: 96%;
     background: linear-gradient(to right, #2e0101, #914747, #2e0101);
     transform: rotateZ(-21deg) skewX(30deg);
@@ -2232,8 +2232,8 @@ footer {
   }
 
   .bg-2 {
-    top: -65%;
-    right: 96%;
+    top: -60%;
+    right: 97%;
     background: linear-gradient(to right, #0a6602, #6d9b68, #0a6602);
     transform: rotateZ(-21deg) skewX(30deg);
     border-radius: 0 0 0 5rem;
@@ -2259,12 +2259,12 @@ footer {
 
   .services-bg-1 {
     top: -20%;
-    right: 0;
+    right: 0%;
   }
 
   .services-bg-2 {
     bottom: -13%;
-    left: 1;
+    left: 1%;
   }
 
   .services {
@@ -2291,6 +2291,184 @@ footer {
   }
   .filter-nav-link {
     margin: 1.6rem;
+  }
+  .templates-left {
+    left: 0;
+    width: 100%;
+    padding: 12rem 5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .templates-left p {
+    text-align: center;
+  }
+
+  .templates-right img:nth-child(1) {
+    width: 35rem;
+    top: 65%;
+    right: 40%;
+  }
+  .templates-right img:nth-child(2) {
+    width: 25rem;
+    height: 40rem;
+    top: 51%;
+    left: -80%;
+  }
+  .templates-right img:nth-child(3) {
+    width: 57rem;
+    top: 57%;
+    right: 10%;
+  }
+
+  .templates::before {
+    right: 25%;
+    bottom: 5%;
+    background: linear-gradient(to bottom, transparent, #2f324d, #2f324d);
+  }
+
+  .play-button {
+    left: -25%;
+  }
+
+  .play-btn {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .play-btn::before {
+    width: 19.5rem;
+    height: 19.5rem;
+  }
+  .play-btn i {
+    font-size: 5rem;
+  }
+
+  footer {
+    height: 45vh;
+    position: relative;
+  }
+
+  .footer-social-media {
+    position: absolute;
+    bottom: 6rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .footer-social-media h3 {
+    margin-right: 5rem;
+  }
+
+  .footer-bottom a {
+    font-size: 1.5rem;
+  }
+
+  .dropdown-service div span:nth-child(2) {
+    display: none;
+  }
+  .dropdown-1-right {
+    width: 100%;
+    height: 75%;
+  }
+  .dropdown-1-right button {
+    margin-left: 18rem;
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 393px) {
+  html {
+    font-size: 35%;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+  }
+  .bg-main {
+    top: -109%;
+    left: -195%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      #4400ab,
+      #4400ab,
+      #4400ab
+    );
+    transform: rotateZ(-19deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .bg-1 {
+    top: -51%;
+    right: 101%;
+    background: linear-gradient(to right, #2e0101, #914747, #2e0101);
+    transform: rotateZ(-21deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .bg-2 {
+    top: -60%;
+    right: 102%;
+    background: linear-gradient(to right, #0a6602, #6d9b68, #0a6602);
+    transform: rotateZ(-21deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .services-bg-1 {
+    top: -15%;
+    right: 0%;
+  }
+
+  .services-bg-2 {
+    bottom: -10%;
+    left: 3%;
+  }
+
+  .filter-nav {
+    width: 85%;
+    min-height: 17rem;
+  }
+  .filter-nav-link {
+    margin-top: 1rem;
+  }
+  .dropdown-1-right button {
+    margin-left: 20rem;
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .bg-main {
+    top: -105%;
+    left: -163%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      #4400ab,
+      #4400ab,
+      #4400ab
+    );
+    transform: rotateZ(-19deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .bg-1 {
+    top: -47%;
+    right: 79%;
+    background: linear-gradient(to right, #2e0101, #914747, #2e0101);
+    transform: rotateZ(-21deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
+  }
+
+  .bg-2 {
+    top: -57%;
+    right: 79%;
+    background: linear-gradient(to right, #0a6602, #6d9b68, #0a6602);
+    transform: rotateZ(-21deg) skewX(30deg);
+    border-radius: 0 0 0 5rem;
   }
 }
 /* End of Responsive */
