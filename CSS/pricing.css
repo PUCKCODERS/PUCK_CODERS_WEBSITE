@@ -381,4 +381,24 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 375px) {
+  .pricing-rectangle {
+    width: 50rem;
+    height: 50rem;
+    top: 65%;
+    left: -10%;
+  }
+  .pricing-small-circle {
+    top: 65%;
+    right: 10%;
+  }
+
+  .pricing-large-circle {
+    width: 50rem;
+    height: 50rem;
+    bottom: -108%;
+    right: 0%;
+  }
+}
+
 /* End of Responsive */

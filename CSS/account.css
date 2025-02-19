@@ -256,4 +256,47 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 10rem;
   }
 }
+
+@media (max-width: 375px) {
+  .account-header h1 {
+    font-size: 4rem;
+  }
+
+  .account-header h3 {
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 2rem auto 5rem auto;
+  }
+
+  .account-circle {
+    width: 60rem;
+    height: 60rem;
+    bottom: 20%;
+    left: 10%;
+  }
+  .account-form-wrapper > span {
+    width: 12rem;
+    height: 12rem;
+    margin-top: 1rem;
+  }
+  .account-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-inputs input {
+    margin-top: 0;
+  }
+
+  .account-form-wrapper button {
+    margin-bottom: 1rem;
+  }
+  .account-form-wrapper {
+    width: 50rem;
+    height: 70rem;
+  }
+  .btn-out {
+    width: 45rem;
+    height: 7rem;
+  }
+}
 /* End of Responsive */

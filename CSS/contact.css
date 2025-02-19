@@ -287,3 +287,12 @@ body::-webkit-scrollbar-thumb {
     left: 5%;
   }
 }
+
+@media (max-width: 375px) {
+  .contact-circle {
+    width: 63rem;
+    height: 63rem;
+    bottom: 35%;
+    left: 5%;
+  }
+}

@@ -581,4 +581,17 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media (max-width: 375px) {
+  .products-content-right img:nth-child(1) {
+    width: 32rem;
+  }
+  .products-content-right img:nth-child(2) {
+    width: 20rem;
+  }
+
+  .promo-content h1 {
+    font-size: 2rem;
+  }
+}
+
 /* End of Responsive */

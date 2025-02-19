@@ -2441,6 +2441,58 @@ footer {
 }
 
 @media (max-width: 375px) {
+  .hamburger .nav-item:not(:last-child) {
+    height: 8rem;
+    padding-left: 3rem;
+  }
+  .dropdown {
+    top: 8rem;
+  }
+  .dropdown-1-right button {
+    margin-left: 19rem;
+    margin-top: -2rem;
+  }
+
+  .features-list-item span {
+    font-size: 1.3rem;
+  }
+
+  .dropdown-2 {
+    height: 32.5rem;
+  }
+  .dropdown-2 div {
+    height: auto;
+  }
+
+  .dropdown-2 div i {
+    display: none;
+  }
+
+  .dropdown-2 div p {
+    display: none;
+  }
+
+  .dropdown-3 {
+    height: 45rem;
+  }
+
+  .dropdown-3 div span:nth-child(2) {
+    display: none;
+  }
+
+  .dropdown-5 {
+    height: 30rem;
+    padding: 1.5rem;
+  }
+
+  .nav-item:last-child {
+    height: 10rem;
+  }
+
+  .nav-btn {
+    height: 5rem;
+  }
+
   .bg-main {
     top: -105%;
     left: -163%;
@@ -2469,6 +2521,64 @@ footer {
     background: linear-gradient(to right, #0a6602, #6d9b68, #0a6602);
     transform: rotateZ(-21deg) skewX(30deg);
     border-radius: 0 0 0 5rem;
+  }
+
+  .services {
+    margin-bottom: 20rem;
+  }
+  .services-bg-1 {
+    top: -38%;
+    right: 0%;
+  }
+
+  .services-bg-2 {
+    bottom: -27%;
+    left: 3%;
+  }
+
+  .templates-right img:nth-child(1) {
+    width: 35rem;
+    top: 75%;
+    right: 40%;
+  }
+  .templates-right img:nth-child(2) {
+    width: 25rem;
+    height: 40rem;
+    top: 61%;
+    left: -80%;
+  }
+  .templates-right img:nth-child(3) {
+    width: 57rem;
+    top: 67%;
+    right: 10%;
+  }
+
+  .templates::before {
+    right: 25%;
+    bottom: -10%;
+    background: linear-gradient(to bottom, transparent, #2f324d, #2f324d);
+  }
+
+  .play-button {
+    left: -25%;
+    top: 80rem;
+  }
+
+  .play-btn {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .play-btn::before {
+    width: 19.5rem;
+    height: 19.5rem;
+  }
+  .play-btn i {
+    font-size: 5rem;
+  }
+
+  footer {
+    height: 55vh;
   }
 }
 /* End of Responsive */
